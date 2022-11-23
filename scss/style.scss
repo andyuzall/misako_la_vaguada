@@ -1,0 +1,717 @@
+/* Import Colores*/
+@import "colors";
+
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Estilo de la primer sección */
+
+.BarraDepromocion{
+    background-color: $color4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.BarraDepromocion p{
+    font-size: 1rem;
+}
+
+.navSuperior{
+    background-color: $color4;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2px;
+}
+
+/* Estilo Header*/
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: $colorblanco;
+    height: 10vh; 
+    margin-top: 1rem 
+}
+.logos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 65px;
+}
+
+.misakologo{
+    margin: auto;
+}
+
+
+a:hover{
+    cursor: pointer;
+}
+
+.iniciosesion{
+    display: flex;
+    width: 65px;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.iniciosesion img{
+    padding: 0;
+    width: 100%;
+}
+
+
+.ulmenu{
+    font-size: 15px;
+}
+
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;  
+}
+
+
+.uno a:hover {
+    border: 0.5px solid $colornegro;
+    border-radius: 10px;
+    color:$colornegro;
+    padding: 5px;
+    font-weight: bold;
+    transition: scale(120%);
+}
+
+.uno a {
+    text-decoration: none;
+    color: $colornegro;
+}
+
+/* Estilo main */
+
+.contenedor{
+    height:100vh;
+    width:100%;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.contenedor a{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 35rem;
+    /*margin-right:75rem;*/
+    z-index: 1;
+    text-decoration: none;
+    color: $colornegro;
+    opacity: 0.8;
+    border-radius: 5px;
+    background-color: $colora;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.color-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color4;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+}
+
+/* Estilos Footer */
+/* Estilos del navegador*/
+
+.NavFooter ul{
+    display: flex;
+    gap: 0.8rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.NavFooter ul li a{
+    text-decoration: none;
+    color: $colornegro;
+    text-transform: uppercase;
+}
+.NavFooter ul li a:hover{
+    border: 1px solid $color3;
+    padding: 0.3rem;
+    border-radius: 10px;
+    background-color: $color1;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px $color3;
+}
+
+/* Estilos genericos*/
+.FooterP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    background-color: $color4;
+    height: 15vh;
+}
+
+/* Estilos del parrafo y logo */
+.PFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.ImgFooter{
+    width: 5%;
+}
+
+.Copy{
+    display: flex;
+    gap: 0.2rem;
+}
+
+.ImagenesRedes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.ImgInstagram{
+    width: 20%;
+}
+
+/* Boton flotante Whatsapp */
+
+.btn-flotante {
+	position: fixed;
+    bottom: 2.5rem;
+	right: -25rem;
+	transition: all 300ms ease 0ms;
+	z-index: 1;
+}
+.btn-flotante:hover {
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+
+.Whatsapp{
+    width: 10%;
+}
+
+/* Estilo Imagenes Section*/
+
+.imgSection{
+    width: 100%;
+}
+
+.imgSection:hover{
+    opacity: 0.70;
+    box-shadow: 3px 3px $colorgris;
+}
+
+
+.ImagenesSection{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+              "pTitle pTitle pTitle"
+              "img1 img2 img3"
+              "img4 img5 img6";
+    margin: 5rem 2rem;
+    gap: 10px;
+}
+
+.pTitle{
+    grid-area: pTitle;
+    text-align: center;
+    overflow: hidden;
+    p{
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        font-size: 3rem;
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: initial;
+        animation-direction: alternate;
+        color: $colorgris;
+        text-shadow: -1px -1px 0px $colorgris,
+        3px 3px 0px $color3,
+        6px 6px 0px $color3;
+    }
+}
+
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.img1{
+    grid-area: img1;
+    
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.img6{
+    grid-area: img6;
+}
+
+.articulo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    gap:3rem;
+}   
+
+.imagen{
+
+    width: 100%;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+
+.parrafoArticulo{
+    text-transform: initial;
+    letter-spacing: 0.09rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.botonArticulo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:$colorblanco;
+    border:none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    background: $colornegro;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.botonArticulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        $colorb, $colorc, $colord, $colorc
+        $colorb, $colorc, $colord, $colorc 
+        );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Estilo pagina Bolsos */
+
+/* Navegador de busqueda */
+
+.box{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 0.7rem;
+}
+
+.container-1{
+    width: 100%;
+    vertical-align: middle;
+    $colorblanco-space: nowrap;
+    position: relative;
+}
+
+.container-1 input#search{
+    width: 100%;
+    height: 50px;
+    background: $color3;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: $colornegro;
+    font-size: 1rem;
+ }
+
+.container-1 .icon{
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 15px;
+    z-index: 2;
+    color: $colornegro;
+}
+
+/* Seccion imagenes */
+
+.ImagenesBolsos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+                        "bolso1 bolso2 bolso3 bolso4"
+                        "bolso5 bolso6 bolso7 bolso8";
+    gap: 2rem;
+    margin: 4rem 2rem;
+}
+
+.bolso1{
+    grid-area: bolso1;
+}
+
+.bolso2{
+    grid-area: bolso2;
+}
+
+.bolso3{
+    grid-area: bolso3;
+}
+
+.bolso4{
+    grid-area: bolso4;
+}
+
+.bolso5{
+    grid-area: bolso5;
+}
+
+
+.bolso6{
+    grid-area: bolso6;
+}
+
+
+.bolso7{
+    grid-area: bolso7;
+}
+
+
+.bolso8{
+    grid-area: bolso8;
+}
+
+.imgDeBolsos {
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    :hover {
+        opacity: 0.8;
+    }
+}
+
+
+/* estilos del formulario*/
+
+.formulario{
+    width:600px;
+    margin:auto;
+    text-align: center;
+    margin-bottom:60px;
+    h1{
+        border-bottom: 1px solid  $color4 ;
+        border-top: 1px solid  $color4 ;
+        padding: 25px 0px 25px 0px;
+        font-weight:normal;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*poner fuente elegida*/
+        font-size: 25px;
+        margin-top:40px;
+    }
+    p{
+        margin-top:40px;
+        margin-bottom:20px;
+    }
+    label{
+        display:block;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom:15px;
+    }
+    ul{
+        list-style: none;
+         margin-top:50px; /*separación de li respecto a texto*/
+     
+     }
+     label strong, .formulario li select strong{
+        color:$colorb;
+    }
+    textarea{
+        margin-top: 10px;
+        color:$color4;
+        border-radius:4px;
+        resize:none;
+        :hover{
+            border-color: $color4;  
+        }
+    }
+    
+}
+
+
+
+.FormArea, .formulario li select{
+    width: 600px;
+    padding: 5px;
+    padding-top:10px;
+    border-radius: 4px;
+    border-width: 0px 0px 1px 0px;
+    margin-bottom: 10px;
+    
+}
+
+.FormArea:hover, .formulario li select:hover{
+    border-color: $color4;  
+}
+.FormArea:focus{
+    border-color: $color4; 
+    border-width:1px; 
+}
+
+.botonesForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.FormButton{
+    margin-top:40px;
+    width: 100px;
+    padding:12px;
+    background-color: $colornegro;
+    color:$colorblanco;
+    border-radius: 4px;
+    text-transform: uppercase;
+    :hover{
+
+        margin-top:40px;
+        width: 100px;
+        padding:12px;
+        background-color:$color4;
+        color:$colornegro;
+        border-radius: 4px;
+    }
+}
+
+/* Estilo pagina nosotros */
+
+.ImgNosotros{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:  
+              "TitleN1 TitleN1"
+              "TitleN3 TitleN3";
+    margin: 2rem;
+    gap: 10px;
+   
+}
+
+.TitleN1{
+    grid-area: TitleN1;
+    text-align: justify;
+    overflow: hidden;
+    margin-left: 5px;
+    h2{
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        color: $colorgrisoscuro;
+        margin-top: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        color: $colorgrisoscuro;
+        margin-top: 10px;
+    }
+}
+
+.TitleN3{
+    grid-area: TitleN3;
+    text-align: justify;
+    overflow: hidden;
+    margin-left: 5px;
+    h2{
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        color: $colorgrisoscuro;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        color: $colorgrisoscuro;
+        margin-top: 10px;
+    }
+}
+
+.imgN1{
+    text-align: center;
+    img {
+        width: 100%;
+        opacity: 0.9;
+    }
+}
+
+
+.imgN3{
+    width: 100%;
+    align-items: center;
+    gap: 5px;   
+}
+.ImagenesIG {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+                        "TitleIG1 TitleIG1 TitleIG1 TitleIG1"
+                        "imgIG1 imgIG2 imgIG3 imgIG4"
+                        "imgIG5 imgIG6 imgIG7 imgIG8";
+    gap: 2rem;
+    margin: 3rem 2rem;
+}
+.TitleIG1{
+    grid-area: TitleIG1;
+    text-align: center;
+    overflow: hidden;
+    color: $colorgrisoscuro;
+}
+
+.imgIG1{
+    grid-area: imgIG1;
+}
+
+.imgIG2{
+    grid-area: imgIG2;
+}
+
+.imgIG3{
+    grid-area: imgIG3;
+}
+
+.imgIG4{
+    grid-area: imgIG4;
+}
+
+.imgIG5{
+    grid-area: imgIG5;
+}
+
+.imgIG6{
+    grid-area: imgIG6;
+}
+
+.imgIG7{
+    grid-area: imgIG7;
+}
+
+.imgIG8{
+    grid-area: imgIG8;
+}
+.imgIG {
+    width: 90%;
+    :hover {
+        opacity: 0.8;
+    }
+}
+
+.ImagenesTiendas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem 2rem;
+    h2{
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+    }
+}
+
+.TitleT1{
+    text-align: center;
+    overflow: hidden;
+    color: $colorgrisoscuro;
+}
