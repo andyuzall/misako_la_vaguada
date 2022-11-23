@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content=""> <!--descripcion google--> 
+    <meta name="keywords" content="">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--CSS ANIMATION AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="icon" href=""> <!--logo titulo-->
+    <!--TITLE-->
+    <title> MISAKO - HOME</title>
+</head>
+<body>
+    <section class="BarraDepromocion">
+        <p class="navSuperior">Entrega gratuita a partir de 30€</p>
+    </section>
+    <header class="header">
+        <section class="logos">
+            <div class="misakologo">
+                <a onclick="Index()">
+                    <img src="./media/MISAKO.png" alt="logo" width="300px">
+                </a>
+            </div>
+            <div class="iniciosesion">
+                <a onclick="redireccionarPagina()">
+                    <img class="ImgUser" src="./media/icons8-usuario (1).png" alt="Iniciosesion">
+                </a>
+                <a>
+                    <img class="ImgFavs" src="./media/icons8-fav (1).png" alt="Favoritos">
+                </a>
+            </div>
+        </section> 
+    </header>
+    <section>
+        <div class="cajamenu">
+            <nav class="navBar">
+                <ul class="ulmenu">
+                    <li class="uno">
+                        <a onclick="NuevaTemporada()"> New </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="SosteniblePage()"> Sostenible </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="BolsosPage()"> Bolsos </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="MaletasPage()"> Maletas </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="CarterasPage()"> Carteras </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="OutletPage()"> Outlet </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="NosotrosPage()"> Nosotros </a>
+                    </li>
+                    <li class="uno">
+                        <a onclick="redireccionarPagina()"> Contacto </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <main>
+        <div class="contenedor">
+            <a href="./pages/nuevatemporada.html">
+                <p>
+                nueva temporada
+                </p>
+            </a>
+            <div class="video-container">
+                <div class="color-overlay"></div>
+                <video muted autoplay loop class="video">
+                    <source src="./media/videoplayback (1).mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+    <article class="articulo">
+        <div>
+            <img class="imagen" src="./media/Misako-storehome.jpg" alt=“misako”>
+        </div>
+        <div>
+            <p class="parrafoArticulo">
+                Somos una marca especializada en bolsos, mochilas,
+                carteras  y otros complementos para mujeres y 
+                hombres. <br>
+                Te ofrecemos una gran variedad de productos para que
+                encuentres el que resalte tu estilo, a un precio asequible
+                y con excelente calidad. 
+            </p>
+            <a class="botonArticulo" href="./pages/nosotros.html"> ver más </a>
+        </div>
+    </article>
+    <section class="ImagenesSection">
+            <div class="pTitle">
+                <p>
+                    DESTACADOS
+                </p>
+            </div>
+            <div class="img1" data-aos="fade-up" data-aos-duration="1500">
+                <img class="imgSection" src="./media/destacadoMochila1.jpg" alt="">
+            </div>
+            <div class="img2" data-aos="fade-up" data-aos-duration="1650">
+                <img class="imgSection" src="./media/destacadoMochila2.jpg" alt="">
+            </div>
+            <div class="img3" data-aos="fade-up" data-aos-duration="1750">
+                <img class="imgSection" src="./media/destacadoMochila3.jpg" alt="">
+            </div>
+            <div class="img4" data-aos="fade-up" data-aos-duration="1900">
+                <img class="imgSection" src="./media/destacadoMochila4.jpg" alt="">
+            </div>
+            <div class="img5" data-aos="fade-up" data-aos-duration="2000">
+                <img class="imgSection" src="./media/destacadoMochila5.jpg" alt="">
+            </div>
+            <div class="img6" data-aos="fade-up" data-aos-duration="2100">
+                <img class="imgSection" src="./media/destacadoMochila6.jpg" alt="">
+            </div>
+    </section>
+    <footer class="FooterP">
+        <div>
+            <nav class="NavFooter">
+                <ul>
+                    <li>
+                        <a href="./pages/politica.html">Politicas</a>
+                    </li>
+                    <li>
+                        <a href="./pages/bolsos.html">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="PFooter">
+            <article class="Copy">
+                <img class="ImgFooter" src="./media/icons8-copyright-all-rights-reserved-50.png">
+                <p>Todos los derechos reservados</p>
+            </article>
+            <article class="ImagenesRedes">
+                    <img class="ImgInstagram" src="./media/icons8-instagram-100.png" alt="">
+                    <img class="ImgInstagram" src="./media/icons8-facebook-100.png" alt="">
+            </article>
+            <div>
+                <a href="https://wa.me/34555005500" class="btn-flotante">
+                    <img data-aos="fade-up" class="Whatsapp" src="./media/whatsapp.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--JS-->
+    <script src="./js/script.js"></script>
+    <!--JS AOS ANIMATION-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+</body>
+</html>
