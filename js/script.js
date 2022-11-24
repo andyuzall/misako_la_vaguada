@@ -33,5 +33,5 @@ function CarterasPage(){
 }
 
 function OutletPage(){
-    location.href = "./pages/outlet"
+    location.href = "./pages/outlet.html"
 }

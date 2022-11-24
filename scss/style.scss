@@ -627,6 +627,7 @@ a:hover{
 
 .imgN1{
     text-align: center;
+    margin: 3rem 0 0 0;
     img {
         width: 100%;
         opacity: 0.9;
@@ -713,4 +714,62 @@ a:hover{
     text-align: center;
     overflow: hidden;
     color: $colorgrisoscuro;
+}
+
+// Estilo pagina politicas
+
+.marcoCentral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem;
+    border: 2px solid;
+	border-color: $color4;
+    padding: 1.5rem;
+}
+
+.marco1{
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        color: $color4;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+.marco2{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    h4{
+        color: $color4;
+        font-size: 1.5rem;
+    }
+    p{
+        margin: 0.5rem 0 0 0;
+        font-size: 1rem;
+    }
+}
+
+.Lista2 {
+    margin: 1rem 0 0 0;
+    ul{
+        list-style: none;
+        padding: 1rem;
+    }
+    ol{
+        text-transform: uppercase;
+        text-align: start;
+        letter-spacing: 0.1rem;
+        margin: 0.4rem 0 0.4rem 0;
+    }
+    h4{
+        text-align: center;
+        color: $color4;
+        margin:  1.5rem 0 2.5rem 0;
+        font-size: 1.5rem;
+    }
 }
