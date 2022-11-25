@@ -297,14 +297,6 @@ a:hover {
   filter: blur(8px);
   animation: glowing 20s linear infinite; }
 
-@keyframes glowing {
-  0% {
-    background-position: 0 0; }
-  50% {
-    background-position: 400% 0; }
-  100% {
-    background-position: 0 0; } }
-
 /* Estilo pagina Bolsos */
 /* Navegador de busqueda */
 .box {
