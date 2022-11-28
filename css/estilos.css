@@ -375,6 +375,7 @@ button::before {
 
 .imgDeBolsos {
   width: 90%;
+  height: 80%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px; }
 
 .imgDeBolsos:hover {
@@ -446,13 +447,9 @@ button::before {
   color: #fff;
   border-radius: 4px;
   text-transform: uppercase; }
-  .FormButton :hover {
-    margin-top: 40px;
-    width: 100px;
-    padding: 12px;
-    background-color: #54BAB9;
-    color: #000;
-    border-radius: 4px; }
+
+.FormButton:hover {
+  background-color: #54BAB9; }
 
 /* Estilo pagina nosotros */
 .ImgNosotros {
@@ -614,3 +611,12 @@ button::before {
     color: #54BAB9;
     margin: 1.5rem 0 2.5rem 0;
     font-size: 1.5rem; }
+
+.pOutlet {
+  color: red;
+  letter-spacing: 0.1rem;
+  font-weight: bold; }
+
+.pPrecios {
+  font-weight: bold;
+  font-size: 1.2rem; }
