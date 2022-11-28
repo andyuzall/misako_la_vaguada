@@ -1,3 +1,7 @@
+/* Import Tipografia */
+
+
+
 /* Import Colores*/
 @import "colors";
 
@@ -8,6 +12,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
 }
 
 /* Estilo de la primer sección */
@@ -187,7 +192,7 @@ a:hover{
 }
 
 .ImgFooter{
-    width: 5%;
+    width: 7%;
 }
 
 .Copy{
@@ -354,13 +359,13 @@ button::before {
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg,
-        $colorb, $colorc, $colord, $colorc,
-        $colorb, $colorc, $colord, $colorc 
+        $colorc, $color4, $colorc, $color4,
+        $colorc, $color4, $colorc, $color4 
         );
     background-size: 800%;
     border-radius: 10px;
     filter: blur(8px);
-    animation: glowing 20s linear infinite;
+    animation: glowing 30s linear infinite;
 }
 
 @keyframes glowing{
@@ -489,7 +494,6 @@ button::before {
         border-top: 1px solid  $color4 ;
         padding: 25px 0px 25px 0px;
         font-weight:normal;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*poner fuente elegida*/
         font-size: 25px;
         margin-top:40px;
     }
