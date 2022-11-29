@@ -64,14 +64,10 @@ a:hover{
 
 .iniciosesion{
     display: flex;
-    width: 65px;
-    gap: 10px;
-    margin-right: 30px;
 }
 
 .iniciosesion img{
     padding: 0;
-    width: 100%;
 }
 
 
@@ -79,12 +75,8 @@ a:hover{
     font-size: 15px;
 }
 
-.navBar ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;  
+.cajamenu{
+    display: none;
 }
 
 
@@ -197,6 +189,7 @@ a:hover{
 
 .Copy{
     display: flex;
+    align-items: center;
     gap: 0.2rem;
 }
 
@@ -396,6 +389,16 @@ button::before {
         flex-direction: column;
         text-align: center;
     }
+    .FooterP{
+        height: 16vh;
+    }
+    .Copy{
+        justify-content: center;
+        gap: 0.5rem;
+        p{
+            font-size: 16px;
+        }
+    }
     .ImagenesRedes{
         display: flex;
         justify-content: center;
@@ -403,14 +406,17 @@ button::before {
     }
     .btn-flotante {
         bottom: -0.5rem;
-        right: -9rem;
+        right: -15rem;
+    }
+    .Whatsapp{
+        width: 7%;
     }
     .cajaMenu{
         width: 30px;
         height: 30px;
         position: absolute;
-        left: 90%;
-        top: 14%;
+        left: 5%;
+        top: 8.5%;
         transform: scale(1);
         cursor: pointer;
         span{
@@ -434,12 +440,43 @@ button::before {
         opacity: 0;
         margin-left: -30px;
     }
-    .cajamenu{
-        display: none;
-    }
-    .NavBara{
+    .ulmenu{
         display: flex;
         flex-direction: column;
+        gap: 1.2rem;
+        margin: 0 0 0 1rem;
+        font-weight: bold;
+    }
+    .uno{
+        list-style: none;
+    }
+    .misakologo{
+        a{
+            img{
+                width: 90%;
+            }
+        }
+    }
+    .iniciosesion {
+        img{
+            padding: 0;
+            width: 80%;
+        }
+    }
+    .contenedor{
+        height:26vh;
+        width:100%;
+    }
+    
+    .contenedor a{
+        margin-top: 9rem;
+        p{
+            font-size: 1rem;
+        }
+    }
+    
+    .video{
+        width: 100%;
     }
 }
 
