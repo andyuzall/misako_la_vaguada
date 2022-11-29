@@ -35,3 +35,21 @@ function CarterasPage(){
 function OutletPage(){
     location.href = "./pages/outlet.html"
 }
+
+
+// Menu de hamburguesas 
+
+document.querySelector(".cajaMenu").addEventListener("click", animate);
+
+var linea1 = document.querySelector(".cajaMenuLinea1");
+var linea2 = document.querySelector(".cajaMenuLinea2");
+var linea3 = document.querySelector(".cajaMenuLinea3");
+var containerMenu = document.querySelector(".cajamenu");
+
+function animate(){
+    linea1.classList.toggle("activecajaMenuLinea1");
+    linea2.classList.toggle("activecajaMenuLinea2");
+    linea3.classList.toggle("activecajaMenuLinea3");
+
+    containerMenu.classList.toggle("cajamenu");
+}
