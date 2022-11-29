@@ -362,10 +362,10 @@ button::before {
     padding: 0;
     width: 80%; }
   .contenedor {
-    height: 26vh;
+    height: 32vh;
     width: 100%; }
   .contenedor a {
-    margin-top: 9rem; }
+    margin: 7rem 0 0 0; }
     .contenedor a p {
       font-size: 1rem; }
   .video {
