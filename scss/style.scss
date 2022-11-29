@@ -373,7 +373,7 @@ button::before {
     }
 }
 
-/* Media Queries pagina Index*/ 
+/* Media Queries pagina Index Mobile*/ 
 
 @media only screen and (max-width: 900px){
     .articulo{
@@ -480,6 +480,35 @@ button::before {
     }
 }
 
+@media only screen and(min-width: 910px){
+    .cajamenu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .ulmenu{
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+        margin: 0 0 0 1rem;
+        font-weight: bold;
+    }
+    .uno{
+    list-style: none;
+    }
+    .iniciosesion {
+        display: inline-block;
+        margin: 0 0 0 -8rem;
+        img{
+            padding: 0;
+            width: 15%;
+        }
+    }
+    .logo{
+        margin-left: 0px;
+    }
+}
 
 /* Estilo pagina Bolsos */
 
