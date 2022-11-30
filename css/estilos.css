@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Import Tipografia */
 /* Import Colores*/
 /* Paleta de colores */
 /* Colores bases */
@@ -51,6 +50,9 @@ a:hover {
 
 .iniciosesion {
   display: flex; }
+
+.iniciosesion a {
+  text-decoration: none; }
 
 .iniciosesion img {
   padding: 0; }
@@ -127,12 +129,7 @@ a:hover {
   text-transform: uppercase; }
 
 .NavFooter ul li a:hover {
-  border: 1px solid #E9DAC1;
-  padding: 0.3rem;
-  border-radius: 10px;
-  background-color: #FBF8F1;
-  font-size: 1.1rem;
-  box-shadow: 2px 2px #E9DAC1; }
+  color: #fff; }
 
 /* Estilos genericos*/
 .FooterP {
@@ -299,7 +296,7 @@ button::before {
   100% {
     background-position: 0 0; } }
 
-/* Media Queries pagina Index Mobile*/
+/* Media Queries pagina Mobile*/
 @media only screen and (max-width: 900px) {
   .articulo {
     flex-direction: column;
@@ -369,7 +366,37 @@ button::before {
     .contenedor a p {
       font-size: 1rem; }
   .video {
-    width: 100%; } }
+    width: 100%; }
+  .ImagenesBolsos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "bolso1 bolso2" "bolso3 bolso4"  "bolso5 bolso6" "bolso7 bolso8";
+    gap: 3.7rem;
+    margin: 2.5rem;
+    margin-bottom: 5rem; }
+  .bolso1 {
+    grid-area: bolso1; }
+  .bolso2 {
+    grid-area: bolso2; }
+  .bolso3 {
+    grid-area: bolso3; }
+  .bolso4 {
+    grid-area: bolso4; }
+  .bolso5 {
+    grid-area: bolso5; }
+  .bolso6 {
+    grid-area: bolso6; }
+  .bolso7 {
+    grid-area: bolso7; }
+  .bolso8 {
+    grid-area: bolso8; }
+  .imgDeBolsos {
+    width: 80%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px; }
+  .imgDeBolsos:hover {
+    opacity: 0.8; } }
 
 @media only screen and (min-width: 910px) {
   .cajamenu {
@@ -392,7 +419,20 @@ button::before {
       padding: 0;
       width: 15%; }
   .logo {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .ImagenesBolsos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "bolso1 bolso2 bolso3 bolso4" "bolso5 bolso6 bolso7 bolso8";
+    gap: 2rem;
+    margin: 4rem 2rem; }
+  .imgDeBolsos {
+    width: 90%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px; }
+  .imgDeBolsos:hover {
+    opacity: 0.8; } }
 
 /* Estilo pagina Bolsos */
 /* Navegador de busqueda */
@@ -431,14 +471,6 @@ button::before {
   color: #000; }
 
 /* Seccion imagenes */
-.ImagenesBolsos {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "bolso1 bolso2 bolso3 bolso4" "bolso5 bolso6 bolso7 bolso8";
-  gap: 2rem;
-  margin: 4rem 2rem; }
-
 .bolso1 {
   grid-area: bolso1; }
 
@@ -463,20 +495,11 @@ button::before {
 .bolso8 {
   grid-area: bolso8; }
 
-.imgDeBolsos {
-  width: 90%;
-  height: 80%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px; }
-
-.imgDeBolsos:hover {
-  opacity: 0.8; }
-
 /* estilos del formulario*/
 .formulario {
-  width: 600px;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 60px; }
+  width: 100%;
+  padding: 2rem;
+  text-align: center; }
   .formulario h1 {
     border-bottom: 1px solid #54BAB9;
     border-top: 1px solid #54BAB9;
@@ -485,13 +508,11 @@ button::before {
     font-size: 25px;
     margin-top: 40px; }
   .formulario p {
-    margin-top: 40px;
-    margin-bottom: 20px; }
+    margin: 40px 0 20px 0; }
   .formulario label {
     display: block;
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 15px; }
+    margin: 20px 0 15px 0; }
   .formulario ul {
     list-style: none;
     margin-top: 50px;
@@ -507,9 +528,8 @@ button::before {
       border-color: #54BAB9; }
 
 .FormArea, .formulario li select {
-  width: 600px;
+  width: 100%;
   padding: 5px;
-  padding-top: 10px;
   border-radius: 4px;
   border-width: 0px 0px 1px 0px;
   margin-bottom: 10px; }
@@ -634,7 +654,8 @@ button::before {
   grid-area: imgIG8; }
 
 .imgIG {
-  width: 90%; }
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
   .imgIG :hover {
     opacity: 0.8; }
 
