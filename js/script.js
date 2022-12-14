@@ -9,7 +9,7 @@ function NuevaTemporada(){
 }
 
 function Index(){
-    location.href = "../index.html";
+    location.href = ".index.html";
 }
 
 function NosotrosPage(){
