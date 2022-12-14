@@ -729,7 +729,7 @@ button::before {
 
 .FormButton{
     margin-top:40px;
-    width: 100px;
+    width: auto;
     padding:12px;
     background-color: $colornegro;
     color:$colorblanco;
@@ -970,5 +970,27 @@ button::before {
     :hover{
         color: $color4;
         font-weight: bold;
+    }
+}
+
+.botonesLanding{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 40vh;
+    margin: 0 1rem 4rem 1rem;
+    a{
+        text-decoration: none;
+        width: auto;
+        padding:12px;
+        background-color: $colornegro;
+        color:$colorblanco;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+    :hover{
+        background-color: $color4;
     }
 }

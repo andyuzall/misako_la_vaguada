@@ -549,7 +549,7 @@ button::before {
 
 .FormButton {
   margin-top: 40px;
-  width: 100px;
+  width: auto;
   padding: 12px;
   background-color: #000;
   color: #fff;
@@ -741,3 +741,22 @@ button::before {
   .accesoRegistro :hover {
     color: #54BAB9;
     font-weight: bold; }
+
+.botonesLanding {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 40vh;
+  margin: 0 1rem 4rem 1rem; }
+  .botonesLanding a {
+    text-decoration: none;
+    width: auto;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase; }
+  .botonesLanding :hover {
+    background-color: #54BAB9; }

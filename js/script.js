@@ -1,5 +1,9 @@
 // Funciones de redireccionamiento
 
+function LandingPage(){
+    location.href = "./landingpage.html"
+}
+
 function redireccionarPagina(){
     location.href = "./pages/iniciarsesion.html";
 }
