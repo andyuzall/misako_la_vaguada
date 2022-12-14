@@ -1,7 +1,7 @@
 // Funciones de redireccionamiento
 
 function redireccionarPagina(){
-    location.href = "./pages/formulario.html";
+    location.href = "./pages/iniciarsesion.html";
 }
 
 function NuevaTemporada(){

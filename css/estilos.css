@@ -729,3 +729,15 @@ button::before {
 .pPrecios {
   font-weight: bold;
   font-size: 1.2rem; }
+
+.accesoRegistro {
+  align-items: center;
+  text-align: center;
+  margin: 0 0 2rem 0; }
+  .accesoRegistro a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem; }
+  .accesoRegistro :hover {
+    color: #54BAB9;
+    font-weight: bold; }

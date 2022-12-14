@@ -957,3 +957,18 @@ button::before {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.accesoRegistro{
+    align-items: center;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    a{
+        text-decoration: none;
+        color: $colornegro;
+        font-size: 1.2rem;
+    }
+    :hover{
+        color: $color4;
+        font-weight: bold;
+    }
+}
