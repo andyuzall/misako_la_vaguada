@@ -40,6 +40,10 @@ function OutletPage(){
     location.href = "./pages/outlet.html"
 }
 
+function Contacto(){
+    location.href = "./pages/formulario.html"
+}
+
 
 // Menu de hamburguesas 
 
